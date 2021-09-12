@@ -1,0 +1,12 @@
+﻿@model Influencers.BusinessLogic.Models.CommentsViewModel
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Content"></label>
+        @*<input asp-for="Comments" style="margin-left : 21px;" />*@
+        <textarea asp-for="Content" class="form-control" style="margin-left : 3px;"
+                  cols="20" rows="5" placeholder="Enter your comment here."></textarea>
+        <span asp-validation-for="Content" class="text-danger"></span>
+        <a asp-controller="Article" asp-action="AddComments" class="btn button2">Send</a>
+    </div>
+</form>

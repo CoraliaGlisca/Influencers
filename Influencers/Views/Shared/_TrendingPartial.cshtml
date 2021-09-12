@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ArticleViewModel>
+
+<form asp-controller="Article" asp-action="Trending" method="get" enctype="multipart/form-data">
+    <div class="row">
+        @foreach (var article in Model)
+        {
+            <div class="col-md-6" style="margin-bottom: 30px;">
+
+                <div class="card" style=" width: 80%; margin: 15px auto 15px; padding: 16px; height:99%">
+                    <img class="card-img-top" src="@("/images/" + article.Image)" alt="Card image cap">
+                    <div class="container2" style="text-align:center">
+                        <h5 class="card-title">@article.Title</h5>
+                        <p class="card-subtitle">By @article.NickName</p>
+                        <p class="card-text">@article.Date</p>
+                        <p class="card-text" style="color:darkblue">@article.TagName</p>
+                        <p class="card-text" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;
+                               max-width: 400px;">
+                            @article.Content
+                        </p>
+                        <a asp-route-id="@article.ArticleId" asp-controller="Article" asp-action="ShowArticle"
+                           class="btn button">Read Article</a>
+                    </div>
+                </div>
+
+            </div>
+        }
+    </div>
+</form>

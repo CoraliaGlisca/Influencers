@@ -1,0 +1,54 @@
+﻿@model ArticleViewModel
+@{
+    ViewData["Title"] = "Add an Article";
+}
+
+<h2>Add an Article</h2>
+<hr class="style1"/>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="row">
+    <form class="col-md-9" asp-controller="Article" asp-action="AddArticle" method="post" enctype="multipart/form-data">
+        
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" style="margin-left : 21px;" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" style="margin-left : 30px;" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Image">Upload Image</label>
+            <input type="file" id="file" name="file" class="form-control" />
+        </div>
+        <div class="form-group">
+            @*<label asp-for="Content"></label>
+            <textarea asp-for="Content" class="form-control" id="summernote" name="editordata"></textarea>
+            <span asp-validation-for="Content" class="text-danger"></span>*@
+            <label asp-for="Content"></label>
+            <textarea asp-for="Content" class="form-control" style="margin-left : 3px;" cols="30" rows="9" placeholder="Enter your content here."></textarea>
+            <span asp-validation-for="Content" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="TagName"></label>
+            <textarea asp-for="TagName" class="form-control" style="margin-left : 3px;" cols="40" rows="4" placeholder="Enter your content here."></textarea>
+            <span asp-validation-for="TagName" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-9">
+            <button type="submit" class="btn button2">Submit</button>
+            @if (!string.IsNullOrEmpty(ViewBag.message))
+            {
+                <span class="alert-secondary">@ViewBag.message</span>
+            }
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

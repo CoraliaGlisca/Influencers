@@ -1,0 +1,61 @@
+﻿@model IEnumerable<ArticleViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-action="Index" method="get" enctype="multipart/form-data">
+
+    <div class="form-actions no-color">
+        <p style="padding-left:70%">
+            <input type="text" name="SearchString" class="btn btn-dark" placeholder="Search tags" value="@ViewData["currentFilter"]" />
+            <button type="submit" value="Search" class="btn button2"><i class="fa fa-search" aria-hidden="true"></i></button>
+            @*<a asp-action="Index"><i class="fa fa-times"></i>Clear searches</a>*@
+        </p>
+    </div>
+</form>
+<h2 style="text-align:center">See what's trending</h2>
+<div id="trending-container"></div>
+<hr class="style1" />
+<form asp-action="Index" method="get" enctype="multipart/form-data">
+
+    <h2 style="text-align:center">Latest articles</h2>
+    <div class="row">
+        @foreach (var article in Model)
+        {
+            <div class="col-md-6" style="margin-bottom: 30px;">
+
+                <div class="card" style=" width: 80%; margin: 15px auto 15px; padding: 16px; height:99%">
+                    <img class="card-img-top" src="@("/images/" + article.Image)" alt="Card image cap">
+                    <div class="container2" style="text-align:center">
+                        <h5 class="card-title">@article.Title</h5>
+                        <p class="card-subtitle">By @article.NickName</p>
+                        <p class="card-text">@article.Date</p>
+                        <p class="card-text" style="color:darkblue">@article.TagName</p>
+                        <p>Rate: <partial name="~/Views/Shared/_VotesPartial.cshtml" model="@article" /></p>
+                        <p class="card-text" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;
+                               max-width: 400px;">
+                            @article.Content
+                        </p>
+                        <a asp-route-id="@article.ArticleId" asp-controller="Article" asp-action="ShowArticle"
+                           class="btn button">Read Article</a>
+                    </div>
+                </div>
+
+            </div>
+        }
+    </div>
+</form>
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(document).ready(function () {
+        $("SearchString")
+        $.get("/Article/Trending", function (response) {
+            $("#trending-container").html(response);
+        });
+    })
+    
+</script>

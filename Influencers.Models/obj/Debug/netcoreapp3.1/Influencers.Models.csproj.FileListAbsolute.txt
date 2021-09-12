@@ -1,0 +1,12 @@
+C:\Users\Cora\source\repos\Influencers\Influencers.Models\bin\Debug\netcoreapp3.1\Influencers.Models.deps.json
+C:\Users\Cora\source\repos\Influencers\Influencers.Models\bin\Debug\netcoreapp3.1\Influencers.Models.dll
+C:\Users\Cora\source\repos\Influencers\Influencers.Models\obj\Debug\netcoreapp3.1\Influencers.Models.csprojAssemblyReference.cache
+C:\Users\Cora\source\repos\Influencers\Influencers.Models\obj\Debug\netcoreapp3.1\Influencers.Models.AssemblyInfoInputs.cache
+C:\Users\Cora\source\repos\Influencers\Influencers.Models\obj\Debug\netcoreapp3.1\Influencers.Models.AssemblyInfo.cs
+C:\Users\Cora\source\repos\Influencers\Influencers.Models\bin\Debug\netcoreapp3.1\Influencers.Models.runtimeconfig.json
+C:\Users\Cora\source\repos\Influencers\Influencers.Models\bin\Debug\netcoreapp3.1\Influencers.Models.runtimeconfig.dev.json
+C:\Users\Cora\source\repos\Influencers\Influencers.Models\obj\Debug\netcoreapp3.1\Influencers.Models.genruntimeconfig.cache
+C:\Users\Cora\source\repos\Influencers\Influencers.Models\bin\Debug\netcoreapp3.1\Influencers.Models.pdb
+C:\Users\Cora\source\repos\Influencers\Influencers.Models\obj\Debug\netcoreapp3.1\Influencers.Models.csproj.CoreCompileInputs.cache
+C:\Users\Cora\source\repos\Influencers\Influencers.Models\obj\Debug\netcoreapp3.1\Influencers.Models.dll
+C:\Users\Cora\source\repos\Influencers\Influencers.Models\obj\Debug\netcoreapp3.1\Influencers.Models.pdb

@@ -1,0 +1,12 @@
+C:\Users\Cora\source\repos\Influencers\Influencers.Repository\bin\Debug\netcoreapp3.1\Influencers.Repository.deps.json
+C:\Users\Cora\source\repos\Influencers\Influencers.Repository\bin\Debug\netcoreapp3.1\Influencers.Repository.dll
+C:\Users\Cora\source\repos\Influencers\Influencers.Repository\bin\Debug\netcoreapp3.1\Influencers.Repository.pdb
+C:\Users\Cora\source\repos\Influencers\Influencers.Repository\obj\Debug\netcoreapp3.1\Influencers.Repository.csprojAssemblyReference.cache
+C:\Users\Cora\source\repos\Influencers\Influencers.Repository\obj\Debug\netcoreapp3.1\Influencers.Repository.AssemblyInfoInputs.cache
+C:\Users\Cora\source\repos\Influencers\Influencers.Repository\obj\Debug\netcoreapp3.1\Influencers.Repository.AssemblyInfo.cs
+C:\Users\Cora\source\repos\Influencers\Influencers.Repository\obj\Debug\netcoreapp3.1\Influencers.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Cora\source\repos\Influencers\Influencers.Repository\obj\Debug\netcoreapp3.1\Influencers.Repository.dll
+C:\Users\Cora\source\repos\Influencers\Influencers.Repository\obj\Debug\netcoreapp3.1\Influencers.Repository.pdb
+C:\Users\Cora\source\repos\Influencers\Influencers.Repository\bin\Debug\netcoreapp3.1\Influencers.Models.dll
+C:\Users\Cora\source\repos\Influencers\Influencers.Repository\bin\Debug\netcoreapp3.1\Influencers.Models.pdb
+C:\Users\Cora\source\repos\Influencers\Influencers.Repository\obj\Debug\netcoreapp3.1\Influencers.Repository.csproj.CopyComplete

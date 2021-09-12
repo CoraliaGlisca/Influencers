@@ -1,0 +1,17 @@
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\bin\Debug\netcoreapp3.1\Influencers.BusinessLogic.deps.json
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\bin\Debug\netcoreapp3.1\Influencers.BusinessLogic.dll
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\obj\Debug\netcoreapp3.1\Influencers.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\obj\Debug\netcoreapp3.1\Influencers.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\obj\Debug\netcoreapp3.1\Influencers.BusinessLogic.AssemblyInfo.cs
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\bin\Debug\netcoreapp3.1\Influencers.BusinessLogic.runtimeconfig.json
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\bin\Debug\netcoreapp3.1\Influencers.BusinessLogic.runtimeconfig.dev.json
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\obj\Debug\netcoreapp3.1\Influencers.BusinessLogic.genruntimeconfig.cache
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\bin\Debug\netcoreapp3.1\Influencers.BusinessLogic.pdb
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\obj\Debug\netcoreapp3.1\Influencers.BusinessLogic.dll
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\obj\Debug\netcoreapp3.1\Influencers.BusinessLogic.pdb
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\bin\Debug\netcoreapp3.1\Influencers.Models.dll
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\bin\Debug\netcoreapp3.1\Influencers.Repository.dll
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\bin\Debug\netcoreapp3.1\Influencers.Models.pdb
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\bin\Debug\netcoreapp3.1\Influencers.Repository.pdb
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\obj\Debug\netcoreapp3.1\Influencers.BusinessLogic.csproj.CopyComplete
+C:\Users\Cora\source\repos\Influencers\Influencers.BusinessLogic\obj\Debug\netcoreapp3.1\Influencers.BusinessLogic.csproj.CoreCompileInputs.cache

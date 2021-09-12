@@ -1,0 +1,17 @@
+﻿@model Influencers.Models.AuthorViewModel
+@{
+    ViewData["Title"] = "Author Page";
+}
+
+<div class="row">
+    <img src="@("/images/" + Model.Image)" alt="image cap" style="padding-bottom:50px; width: 40%;">
+    <div class="col-md-7">
+        <h2 style="text-align: right">"@Model.NickName"</h2>
+        <h4 style="text-align: right; padding-bottom: 15px;"> @Model.FirstName @Model.LastName</h4>
+        <p style="text-align: right; font-family: 'Raleway', sans-serif;"><b>About @Model.NickName: </b>@Model.Description</p>
+    </div>
+   </div>
+    <div class="row">
+        <h3 style="text-align: left">Votes: @Model.Votes</h3>
+    </div>
+

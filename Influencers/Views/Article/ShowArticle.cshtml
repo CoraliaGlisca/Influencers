@@ -1,0 +1,43 @@
+﻿@model Influencers.Models.ArticleViewModel
+@{
+    ViewData["Title"] = "Article Page";
+}
+
+<div style="padding-left:90%">
+    <a asp-route-id="@Model.ArticleId" asp-controller="Article" asp-action="VerifyEmail"
+       class="btn button2">Edit Article</a>
+</div>
+<div class="centeralign" style=" text-align:center;">
+    <h1>@Model.Title</h1>
+</div>
+
+<div>
+    <img src="@("/images/" + Model.Image)" alt="image cap" style="width:60%; padding-bottom:50px;margin-left: 200px;">
+</div>
+<div>
+    <h5 style="text-align:center">By <i>@Model.NickName</i></h5>
+</div>
+<div class="row">
+    <p style="text-align:center">@Model.Content</p>
+</div>
+
+<div style="padding-left:80%">
+    <h5>@Model.Date</h5>
+</div>
+
+<div style="padding-left:80%">
+    <p>Tags: @Model.TagName</p>
+</div>
+
+<h5>Did you enjoy reding this article? Give it a vote!</h5>
+<partial name="~/Views/Shared/_VotesPartial.cshtml" model="@Model" />
+
+<hr class="style1" />
+
+<h3>You may also like:</h3>
+<partial name="~/Views/Shared/_SuggestionsPartial.cshtml" model="@Model.suggestedList" />
+
+
+@*<h3>Comments section</h3>*@
+@*<partial name="~/Views/Shared/_CommentsPartial.cshtml" model="@Model.CommentsList" />*@
+@*<partial name="~/Views/Shared/_AddCommentPartial.cshtml" model="@Model.Comments" />*@

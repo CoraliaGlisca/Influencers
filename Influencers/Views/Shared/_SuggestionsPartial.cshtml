@@ -1,0 +1,25 @@
+﻿@model IEnumerable<ArticleViewModel>
+
+    <form asp-action="ShowArticle" method="get">
+        <div class="row">
+            @foreach (var article in Model)
+            {
+                <div class="col-md-3">
+
+                    <div class="card" style=" width: 70%; margin: 15px auto 15px; padding: 16px; height:90%">
+                        <div class="container2" style="text-align:center">
+                            <h5 class="card-title">@article.Title</h5>
+                            <p class="card-subtitle">By @article.NickName</p>                                                                            
+                            <p class="card-text" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;
+                               max-width: 200px;">
+                                @article.Content
+                            </p>
+                            <a asp-route-id="@article.ArticleId" asp-controller="Article" asp-action="ShowArticle"
+                               class="btn button2" style="width:100%">Read Article</a>
+                        </div>
+                    </div>
+
+                </div>
+            }
+        </div>
+    </form>

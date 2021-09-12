@@ -1,0 +1,29 @@
+﻿@model ArticleViewModel
+@*<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">*@
+
+
+<span id="star-@Model.ArticleId" onmouseover="AddHoverForStars(@Model.ArticleId)" onmouseout="RemoveHoverForStars(@Model.ArticleId)">
+    <span class="fa fa-star" aria-hidden="true" id="star-@Model.ArticleId-1" 
+       style="font-size: 36px;cursor: pointer" title="1 star" onclick="GetVotes(@Model.ArticleId, -2)"
+       @*onmouseover="ChangeColor(this.id, '#f8ce0b')" onmouseout="ChangeColor(this.id, '#212529')"*@></span>
+    <span class="fa fa-star" aria-hidden="true" id="star-@Model.ArticleId-2"
+       style="font-size: 36px; cursor: pointer;" title="2 stars" onclick="GetVotes(@Model.ArticleId, -1)"
+       @*onmouseover="ChangeColor(this.id,'#f8ce0b')" onmouseout="ChangeColor(this.id, '#212529')"*@></span>
+    <span class="fa fa-star" aria-hidden="true" id="star-@Model.ArticleId-3"
+       style="font-size:36px; cursor:pointer" title="3 stars" onclick="GetVotes(@Model.ArticleId, 1)"
+       @*onmouseover="ChangeColor(this.id,'#f8ce0b')" onmouseout="ChangeColor(this.id, '#212529')"*@></span>
+    <span class="fa fa-star" aria-hidden="true" id="star-@Model.ArticleId-4"
+       style="font-size:36px; cursor:pointer" title="4 stars" onclick="GetVotes(@Model.ArticleId, 2)"
+       @*onmouseover="ChangeColor(this.id,'#f8ce0b')" onmouseout="ChangeColor(this.id, '#212529')"*@></span>
+    <span class="fa fa-star" aria-hidden="true" id="star-@Model.ArticleId-5"
+       style="font-size:36px; cursor:pointer" title="5 stars" onclick="GetVotes(@Model.ArticleId, 3)"
+       @*onmouseover="ChangeColor(this.id,'#f8ce0b')" onmouseout="ChangeColor(this.id, '#212529')"*@></span>
+</span>
+
+<script>
+    function ChangeColor(id, color) {
+        console.log(id);
+        $("#" + id).css("color", color)
+    }
+    
+</script>

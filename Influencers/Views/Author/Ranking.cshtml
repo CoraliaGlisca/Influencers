@@ -1,0 +1,45 @@
+﻿@model IEnumerable<AuthorViewModel>
+@{
+    ViewData["Title"] = "Ranking";
+}
+
+<h2>Ranking of authors</h2>
+
+    
+<form>
+    @*<label name="SortOrder" placeholder="Filters"></label>*@
+    @*<div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label  name="SortOrder" class="form-check-label" for="inlineCheckbox1">
+                <a asp-action="Index" asp-route-sortOrder='@ViewData["SortNickName"]'>SortByNickname</a>
+            </label>
+
+        </div>*@
+    <div class="form-actions no-color">
+        <p style="padding-left:70%">
+            <input type="text" name="SearchString" class="btn btn-dark" placeholder="Search authors" value="@ViewData["currentFilter"]" />
+            <button type="submit" value="Search" class="btn button2"><i class="fa fa-search" aria-hidden="true"></i></button>          
+        </p>
+    </div>
+
+
+    @foreach (var author in Model)
+    {
+
+        <div class="row">
+
+            <div class="card" style="width: 40%; margin-top: 15px; padding: 16px;">
+                <img class="card-img-top" src="@("/images/" + author.Image)" alt="Card image cap">
+                <div class="container2">
+                    <h5 class="card-title" style="text-align:center">"@author.NickName"</h5>
+                    <p class="card-text" style="text-align:center">@author.FirstName @author.LastName</p>
+                    <p class="card-text" style="text-align:center"> Votes: @author.Votes</p>
+                    <a asp-route-id="@author.Id" asp-controller="Author" asp-action="ShowAuthor" class="btn button2" style="width:100%">Read about author</a>
+                </div>
+            </div>
+
+        </div>
+    }
+
+</form>
+
